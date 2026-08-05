@@ -47,7 +47,7 @@ export const eventDates = [
 export const newsItems = [
   {
     image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
     title: "Welcome to Our New Website!",
     body: "Thank you for visiting our new website! Please check back often as updates are made, and click on article headlines to view full stories where applicable.",
   },

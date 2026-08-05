@@ -1,4 +1,10 @@
-import { BookOpen, Facebook, Linkedin, Youtube, Instagram } from "lucide-react";
+import { BookOpen } from "lucide-react";
+import {
+  FacebookIcon,
+  LinkedinIcon,
+  YoutubeIcon,
+  InstagramIcon,
+} from "./SocialIcons";
 import { footerLinks } from "../data";
 
 export default function Footer() {
@@ -51,7 +57,7 @@ export default function Footer() {
             Follow Us
           </div>
           <div className="flex items-center gap-3 mb-6">
-            {[Facebook, Linkedin, Youtube, Instagram].map((Icon, i) => (
+            {[FacebookIcon, LinkedinIcon, YoutubeIcon, InstagramIcon].map((Icon, i) => (
               <a
                 key={i}
                 href="#"
