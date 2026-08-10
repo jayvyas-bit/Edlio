@@ -8,23 +8,6 @@ export default function AboutUs() {
   return (
     <section className="bg-[#101B33] py-16">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 className="text-white text-[32px] font-extrabold uppercase tracking-wide mb-4">
-            About Us
-          </h2>
-          <p className="text-white/70 text-sm leading-relaxed mb-6">
-            Welcome to our school! We believe that parent participation is key
-            to student success; our new website is designed to provide parents
-            with all the information they need to be active participants in
-            their student&rsquo;s education. You will find that the site works
-            just as well on mobile devices as it does on a desktop so you can
-            find information on the go.
-          </p>
-          <button className="bg-[#C0392B] hover:bg-[#a5301f] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
-            Learn More
-          </button>
-        </div>
-
         <div className="relative flex flex-col items-center">
           <div className="relative w-full max-w-sm h-72 sm:h-80 rounded-t-full rounded-b-2xl overflow-hidden">
             <img
@@ -58,6 +41,23 @@ export default function AboutUs() {
             ))}
           </div>
         </div>
+        <div className="h-max">
+          <h2 className="text-white text-[32px] font-extrabold uppercase tracking-wide mt-0 mb-[8px]">
+            About Us
+          </h2>
+          <p className="text-white/70 text-sm leading-relaxed mb-6">
+            Welcome to our school! We believe that parent participation is key
+            to student success; our new website is designed to provide parents
+            with all the information they need to be active participants in
+            their student&rsquo;s education. You will find that the site works
+            just as well on mobile devices as it does on a desktop so you can
+            find information on the go.
+          </p>
+          <button className="bg-[#C0392B] hover:bg-[#a5301f] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
+            Learn More
+          </button>
+        </div>
+
       </div>
     </section>
   );

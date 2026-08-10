@@ -5,6 +5,7 @@
 // (set_app_dev_command) so the "/" route renders here.
 
 import { Canvas, RouteStoryboard } from "tempo-sdk/canvas";
+import { Storyboard as TempoCanvasStoryboard } from "tempo-sdk/canvas";
 
 export default function HomeCanvas() {
   return (

@@ -16,7 +16,8 @@ export default function App() {
       <Header />
       <Hero />
       <QuickLinks />
-      <PrincipalMessage />
+      <PrincipalMessage>
+      </PrincipalMessage>
       <AboutUs />
       <SchoolEvents />
       <NewsGrid />
