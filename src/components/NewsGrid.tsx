@@ -8,15 +8,8 @@ export default function NewsGrid() {
   return (
     <section className="bg-[#F5F1EA] py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-center text-lg font-extrabold uppercase tracking-wide text-[#101B33] mb-6">
-          School Events
-        </h2>
+        <h2 className="text-center text-[32px] font-extrabold uppercase tracking-wide text-[#101B33] mb-6">News & Announcements<br /></h2>
 
-        <div className="flex items-center justify-center gap-3 mb-10">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B]" />
-          <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B]" />
-          <span className="w-1.5 h-1.5 rounded-full bg-[#C0392B]" />
-        </div>
 
         <div className="flex items-center gap-4">
           <button

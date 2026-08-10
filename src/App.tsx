@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-[4000%] bg-[#F5F1EA]">
+    <div className="min-h-full bg-[#F5F1EA]">
       <UtilityBar />
       <Header />
       <Hero />

@@ -9,7 +9,7 @@ export default function AboutUs() {
     <section className="bg-[#101B33] py-16">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 className="text-white text-lg font-extrabold uppercase tracking-wide mb-4">
+          <h2 className="text-white text-[32px] font-extrabold uppercase tracking-wide mb-4">
             About Us
           </h2>
           <p className="text-white/70 text-sm leading-relaxed mb-6">

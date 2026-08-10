@@ -27,7 +27,7 @@ export default function Hero() {
         </button>
 
         <div className="absolute left-6 sm:left-10 bottom-0 translate-y-1/3 max-w-sm bg-[#F5F1EA] rounded-2xl shadow-xl p-6 sm:p-7">
-          <h2 className="text-lg font-extrabold uppercase tracking-wide text-[#101B33] mb-3">
+          <h2 className="text-[32px] font-extrabold uppercase tracking-wide text-[#101B33] mb-3">
             Who We Are
           </h2>
           <p className="text-sm text-[#4a453d] leading-relaxed mb-5">

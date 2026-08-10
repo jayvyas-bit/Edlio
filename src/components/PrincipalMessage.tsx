@@ -9,7 +9,7 @@ export default function PrincipalMessage() {
         />
 
         <div className="bg-white rounded-2xl shadow-md p-6 sm:p-8">
-          <h2 className="text-lg font-extrabold uppercase tracking-wide text-[#101B33] mb-4">
+          <h2 className="text-[32px] font-extrabold uppercase tracking-wide text-[#101B33] mb-4">
             Principal&rsquo;s Message
           </h2>
           <p className="text-sm text-[#4a453d] leading-relaxed">
