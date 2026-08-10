@@ -29,9 +29,9 @@ export default function AtAGlance() {
         <div className="flex items-center gap-4">
           <button
             aria-label="Previous stats"
-            className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
+            className="hidden sm:flex w-16 h-16 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
-            <ArrowLeftIcon className="w-3 h-3" />
+            <ArrowLeftIcon className="w-11 h-11" />
           </button>
 
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-6 flex-1">
@@ -58,9 +58,9 @@ export default function AtAGlance() {
 
           <button
             aria-label="Next stats"
-            className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
+            className="hidden sm:flex w-16 h-16 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
-            <ArrowRightIcon className="w-3 h-3" />
+            <ArrowRightIcon className="w-11 h-11" />
           </button>
         </div>
       </div>

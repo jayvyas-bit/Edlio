@@ -7,7 +7,7 @@ export default function NewsGrid() {
 
   return (
     <>
-      <section className="bg-[#F5F1EA] py-16">
+      <section className="bg-[#F5F1EA] pb-16 pt-0">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-center text-[32px] font-extrabold uppercase tracking-wide text-[#101B33] mb-6">News & Announcements<br /></h2>
 
@@ -18,9 +18,9 @@ export default function NewsGrid() {
                 setPage((p) => (p + newsItems.length - 1) % newsItems.length)
               }
               aria-label="Previous news"
-              className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0"
+              className="hidden sm:flex w-16 h-16 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0"
             >
-              <ArrowLeftIcon className="w-3 h-3" />
+              <ArrowLeftIcon className="w-11 h-11" />
             </button>
 
             <div className="grid sm:grid-cols-3 gap-6 flex-1">
@@ -48,9 +48,9 @@ export default function NewsGrid() {
             <button
               onClick={() => setPage((p) => (p + 1) % newsItems.length)}
               aria-label="Next news"
-              className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0"
+              className="hidden sm:flex w-16 h-16 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0"
             >
-              <ArrowRightIcon className="w-3 h-3" />
+              <ArrowRightIcon className="w-11 h-11" />
             </button>
           </div>
 

@@ -1,10 +1,12 @@
-import {
-  FacebookIcon,
-  LinkedinIcon,
-  YoutubeIcon,
-  InstagramIcon,
-} from "./SocialIcons";
+import { FacebookIcon, YoutubeIcon, InstagramIcon } from "./SocialIcons";
 import { footerLinks } from "../data";
+
+const socialLinks = [
+  { icon: FacebookIcon, label: "Facebook" },
+  { image: "/images/linkedin-white.png", label: "LinkedIn" },
+  { icon: YoutubeIcon, label: "YouTube" },
+  { icon: InstagramIcon, label: "Instagram" },
+];
 
 export default function Footer() {
   return (
@@ -60,22 +62,34 @@ export default function Footer() {
             Follow Us
           </div>
           <div className="flex items-center gap-3 mb-6">
-            {[FacebookIcon, LinkedinIcon, YoutubeIcon, InstagramIcon].map((Icon, i) => (
+            {socialLinks.map((social) => (
               <a
-                key={i}
+                key={social.label}
                 href="#"
-                aria-label="social link"
+                aria-label={social.label}
                 className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 active:bg-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
-                <Icon className="w-11 h-11" />
+                {social.image ? (
+                  <img src={social.image} alt={social.label} className="w-11 h-11" />
+                ) : (
+                  <social.icon className="w-11 h-11" />
+                )}
               </a>
             ))}
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-white text-xs border border-white/30 rounded-full px-4 py-1.5">
-              e Login
-            </span>
-            <span className="text-white text-xs">Powered by edlio</span>
+            <a
+              href="#"
+              aria-label="Edlio Login"
+              className="bg-white rounded-full px-4 py-1.5 flex items-center hover:bg-[#F5F1EA] active:bg-[#e9e2d4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+            >
+              <img src="/images/edlio-login.png" alt="Edlio Login" className="h-4 w-auto" />
+            </a>
+            <img
+              src="/images/edlio-powered-by.png"
+              alt="Powered by edlio"
+              className="h-3.5 w-auto brightness-0 invert opacity-90"
+            />
           </div>
         </div>
       </div>

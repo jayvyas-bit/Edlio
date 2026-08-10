@@ -80,9 +80,9 @@ export default function SchoolEvents() {
           <button
             onClick={() => go(-1)}
             aria-label="Previous date"
-            className="w-11 h-11 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
+            className="w-16 h-16 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
-            <ArrowLeftIcon className="w-3 h-3" />
+            <ArrowLeftIcon className="w-11 h-11" />
           </button>
           <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] active:bg-[#050c17] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
             More Events
@@ -90,9 +90,9 @@ export default function SchoolEvents() {
           <button
             onClick={() => go(1)}
             aria-label="Next date"
-            className="w-11 h-11 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
+            className="w-16 h-16 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
-            <ArrowRightIcon className="w-3 h-3" />
+            <ArrowRightIcon className="w-11 h-11" />
           </button>
         </div>
       </div>

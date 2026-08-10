@@ -16,7 +16,7 @@ export default function AboutUs() {
     <section className="bg-[oklch(62.7%_.1098_82.164)] py-16">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative flex flex-col items-center">
-          <div className="relative w-full max-w-sm h-72 sm:h-80 rounded-t-full rounded-b-2xl overflow-hidden">
+          <div className="relative w-full max-w-sm h-72 sm:h-80 rounded-b-2xl overflow-hidden rounded-tr-[16px] rounded-tl-[16px]">
             <img
               src={slides[active].src}
               alt={slides[active].alt}
@@ -43,7 +43,7 @@ export default function AboutUs() {
                 aria-label={`Slide ${i + 1}`}
                 className={`w-2 h-2 rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
                   active === i
-                    ? "bg-[#A9812E] hover:bg-[#8B6A1F] active:bg-[#6b5218]"
+                    ? "bg-[#101B33] hover:bg-[#0a1220] active:bg-[#050a10]"
                     : "bg-white/30 hover:bg-white/50 active:bg-white/70"
                 }`}
               />

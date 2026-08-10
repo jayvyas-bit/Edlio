@@ -40,7 +40,7 @@ export default function QuickLinks() {
                       {item.label}
                     </span>
                   </span>
-                  <ArrowRightIcon className="w-4 h-4 text-[#A9812E] shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRightIcon className="w-11 h-11 text-[#A9812E] shrink-0 group-hover:translate-x-1 transition-transform" />
                 </button>
               </li>
             );
