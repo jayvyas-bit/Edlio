@@ -46,7 +46,7 @@ export default function Footer() {
               <li key={link}>
                 <a
                   href="#"
-                  className="text-white text-sm underline hover:text-white transition-colors"
+                  className="text-white text-sm underline hover:text-[#F5F1EA] active:text-[#A9812E] rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
                 >
                   {link}
                 </a>
@@ -65,7 +65,7 @@ export default function Footer() {
                 key={i}
                 href="#"
                 aria-label="social link"
-                className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+                className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 active:bg-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
                 <Icon className="w-11 h-11" />
               </a>

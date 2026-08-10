@@ -33,7 +33,7 @@ export default function Header() {
           {navItems.map((item) => (
             <button
               key={item.label}
-              className="flex items-center gap-1 text-sm font-semibold uppercase tracking-wide text-[#1a1a1a] hover:text-[#A9812E] transition-colors"
+              className="flex items-center gap-1 text-sm font-semibold uppercase tracking-wide text-[#1a1a1a] hover:text-[#A9812E] active:text-[#6b5218] rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors"
             >
               {item.label}
               {item.dropdown && <ChevronDown className="w-3.5 h-3.5" />}
@@ -44,11 +44,11 @@ export default function Header() {
         <div className="flex items-center gap-4 shrink-0">
           <button
             aria-label="Search"
-            className="w-11 h-11 flex items-center justify-center text-[#1a1a1a] hover:text-[#A9812E] transition-colors"
+            className="w-11 h-11 rounded-full flex items-center justify-center text-[#1a1a1a] hover:text-[#A9812E] hover:bg-black/5 active:text-[#6b5218] active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors"
           >
             <SearchIcon className="w-4 h-4" />
           </button>
-          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-sm font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] active:bg-[#050c17] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] text-sm font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
             Donate
           </button>
         </div>

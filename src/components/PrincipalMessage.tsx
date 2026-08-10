@@ -20,7 +20,7 @@ export default function PrincipalMessage() {
             happy to receive feedback and suggestions and my door is always
             open. Here&rsquo;s to another great year!
           </p>
-          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors w-max [color:oklch(0.627_0.1098_82.164)]">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] active:bg-[#050c17] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors w-max [color:oklch(0.627_0.1098_82.164)]">
             Learn More
           </button>
         </div>

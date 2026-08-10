@@ -18,8 +18,8 @@ const icons: Record<string, typeof DocumentIcon> = {
 
 export default function QuickLinks() {
   return (
-    <section className="bg-[oklch(22.6%_.0495_264.23)]">
-      <div className="max-w-6xl px-0 grid md:grid-cols-2 gap-10 items-center py-0 mx-[40px] w-full mb-[64px] mt-0">
+    <section className="bg-[oklch(22.6%_.0495_264.23)] flex flex-row">
+      <div className="max-w-full px-0 md:grid-cols-2 items-center py-0 mx-[40px] mb-[64px] mt-0 grow basis-[0%] flex flex-row">
         <div className="flex justify-center md:justify-start w-[384px] h-full rounded-bl-[16px] rounded-br-[16px]">
           <img
             src="/images/quicklinks.jpg"
@@ -28,12 +28,12 @@ export default function QuickLinks() {
           />
         </div>
 
-        <ul className="p-20 space-y-3 w-full">
+        <ul className="space-y-3 py-16 grow basis-[0%] pl-16 pr-0">
           {quickLinks.map((item) => {
             const Icon = icons[item.icon];
             return (
               <li key={item.label}>
-                <button className="w-full flex items-center justify-between gap-4 py-4 px-5 bg-white border border-[#101B33]/15 rounded-md group text-left hover:border-[#A9812E] transition-colors">
+                <button className="w-full flex items-center justify-between gap-4 py-4 px-5 bg-white border border-[#101B33]/15 rounded-md group text-left hover:border-[#A9812E] hover:bg-[#F5F1EA] active:bg-[#efe9dd] active:border-[#8B6A1F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors">
                   <span className="flex items-center gap-4 min-w-0">
                     <Icon className="w-5 h-5 text-[#A9812E] shrink-0" />
                     <span className="font-extrabold uppercase tracking-wide text-[#101B33] text-sm sm:text-base whitespace-nowrap group-hover:text-[#A9812E] transition-colors">

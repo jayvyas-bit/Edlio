@@ -22,7 +22,7 @@ export default function Hero() {
               We are a K-12 school specializing in educating the whole student,
               focusing on the academic and life-skills necessary for success.
             </p>
-            <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-xs font-bold uppercase tracking-wide px-5 py-2.5 rounded-lg transition-colors h-max [color:oklch(0.627_0.1098_82.164)]">
+            <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] active:bg-[#050c17] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] text-xs font-bold uppercase tracking-wide px-5 py-2.5 rounded-lg transition-colors h-max [color:oklch(0.627_0.1098_82.164)]">
               Learn More
             </button>
           </div>
@@ -31,7 +31,7 @@ export default function Hero() {
         <button
           onClick={() => setPlaying((p) => !p)}
           aria-label={playing ? "Pause" : "Play"}
-          className="absolute bottom-6 right-6 w-11 h-11 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
+          className="absolute bottom-6 right-6 w-11 h-11 rounded-full bg-black/50 hover:bg-black/70 active:bg-black/85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white flex items-center justify-center text-white transition-colors"
         >
           {playing ? (
             <Pause className="w-4 h-4" />

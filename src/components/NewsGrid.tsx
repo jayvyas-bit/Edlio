@@ -18,7 +18,7 @@ export default function NewsGrid() {
                 setPage((p) => (p + newsItems.length - 1) % newsItems.length)
               }
               aria-label="Previous news"
-              className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
+              className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0"
             >
               <ArrowLeftIcon className="w-3 h-3" />
             </button>
@@ -48,14 +48,14 @@ export default function NewsGrid() {
             <button
               onClick={() => setPage((p) => (p + 1) % newsItems.length)}
               aria-label="Next news"
-              className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
+              className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 active:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] transition-colors shrink-0"
             >
               <ArrowRightIcon className="w-3 h-3" />
             </button>
           </div>
 
           <div className="flex justify-center mt-10">
-            <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
+            <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] active:bg-[#050c17] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
               More News
             </button>
           </div>

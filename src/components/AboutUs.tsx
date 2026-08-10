@@ -25,7 +25,7 @@ export default function AboutUs() {
             <button
               onClick={() => setPlaying((p) => !p)}
               aria-label={playing ? "Pause" : "Play"}
-              className="absolute bottom-4 right-4 w-11 h-11 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
+              className="absolute bottom-4 right-4 w-11 h-11 rounded-full bg-black/50 hover:bg-black/70 active:bg-black/85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white flex items-center justify-center text-white transition-colors"
             >
               {playing ? (
                 <Pause className="w-4 h-4" />
@@ -41,8 +41,10 @@ export default function AboutUs() {
                 key={i}
                 onClick={() => setActive(i)}
                 aria-label={`Slide ${i + 1}`}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  active === i ? "bg-[#A9812E]" : "bg-white/30"
+                className={`w-2 h-2 rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
+                  active === i
+                    ? "bg-[#A9812E] hover:bg-[#8B6A1F] active:bg-[#6b5218]"
+                    : "bg-white/30 hover:bg-white/50 active:bg-white/70"
                 }`}
               />
             ))}
@@ -60,7 +62,7 @@ export default function AboutUs() {
             just as well on mobile devices as it does on a desktop so you can
             find information on the go.
           </p>
-          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] active:bg-[#050c17] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A9812E] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
             Learn More
           </button>
         </div>
