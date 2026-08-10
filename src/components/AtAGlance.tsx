@@ -1,15 +1,21 @@
 import {
-  ChevronLeft,
-  ChevronRight,
-  GraduationCap,
-  Trophy,
-  Palette,
-  CalendarCheck,
-  Users,
-} from "lucide-react";
+  GradCapIcon,
+  TrophyIcon,
+  ExtracurricularIcon,
+  CalendarIcon,
+  GroupIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
+} from "./EdlioIcons";
 import { stats } from "../data";
 
-const icons = [GraduationCap, Trophy, Palette, CalendarCheck, Users];
+const icons = [
+  GradCapIcon,
+  TrophyIcon,
+  ExtracurricularIcon,
+  CalendarIcon,
+  GroupIcon,
+];
 
 export default function AtAGlance() {
   return (
@@ -23,9 +29,9 @@ export default function AtAGlance() {
         <div className="flex items-center gap-4">
           <button
             aria-label="Previous stats"
-            className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
+            className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ArrowLeftIcon className="w-3 h-3" />
           </button>
 
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-6 flex-1">
@@ -36,13 +42,13 @@ export default function AtAGlance() {
                   key={stat.label}
                   className="flex flex-col items-center text-center gap-3"
                 >
-                  <div className="w-16 h-16 rounded-full bg-[#101B33] flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-lg bg-[#101B33] flex items-center justify-center">
                     <Icon className="w-7 h-7 text-white" />
                   </div>
                   <div className="font-extrabold text-[#101B33]">
                     {stat.value}
                   </div>
-                  <div className="text-xs text-[#6b6355] uppercase tracking-wide leading-tight">
+                  <div className="text-xs text-[#000000] uppercase tracking-wide leading-tight">
                     {stat.label}
                   </div>
                 </div>
@@ -52,9 +58,9 @@ export default function AtAGlance() {
 
           <button
             aria-label="Next stats"
-            className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
+            className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ArrowRightIcon className="w-3 h-3" />
           </button>
         </div>
       </div>

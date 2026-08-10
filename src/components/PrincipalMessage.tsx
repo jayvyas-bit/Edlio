@@ -6,7 +6,7 @@ export default function PrincipalMessage() {
           <h2 className="text-[32px] font-extrabold uppercase tracking-wide text-[#101B33] mb-[8px] h-max">
             Principal&rsquo;s Message
           </h2>
-          <p className="text-sm text-[#4a453d] leading-relaxed mb-6">
+          <p className="text-sm text-[#000000] leading-relaxed mb-6">
             Welcome to our school! I am so pleased to welcome our new students
             as well as our returning students. We have made many recent
             improvements to our campus and we continue to expand our
@@ -20,12 +20,12 @@ export default function PrincipalMessage() {
             happy to receive feedback and suggestions and my door is always
             open. Here&rsquo;s to another great year!
           </p>
-          <button className="bg-[#A9812E] hover:bg-[#8B6A1F] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors w-max">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors w-max [color:oklch(0.627_0.1098_82.164)]">
             Learn More
           </button>
         </div>
         <img
-          src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=900&auto=format&fit=crop"
+          src="/images/principal.jpg"
           alt="Principal in hallway"
           className="w-full h-[460px] object-cover rounded-tr-2xl rounded-br-2xl"
         />

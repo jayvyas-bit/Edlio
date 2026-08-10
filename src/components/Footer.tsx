@@ -21,22 +21,22 @@ export default function Footer() {
               <div className="font-extrabold uppercase tracking-tight text-white text-base">
                 Avicena
               </div>
-              <div className="text-[10px] uppercase tracking-widest text-white/50 -mt-1">
+              <div className="text-[10px] uppercase tracking-widest text-white -mt-1">
                 Christian School
               </div>
             </div>
           </div>
-          <p className="text-white/60 text-sm leading-relaxed">
+          <p className="text-white text-sm leading-relaxed">
             12960 Culver Blvd, Suite 105
             <br />
             Los Angeles, CA 90066
           </p>
-          <p className="text-white/60 text-sm mt-3">Phone: (877) 623-7200</p>
-          <p className="text-white/60 text-sm">Fax: (888) 682-4062</p>
+          <p className="text-white text-sm mt-3">Phone: (877) 623-7200</p>
+          <p className="text-white text-sm">Fax: (888) 682-4062</p>
         </div>
 
         <div>
-          <div className="text-white/50 text-xs uppercase tracking-widest font-semibold mb-4">
+          <div className="text-white text-xs uppercase tracking-widest font-semibold mb-4">
             Links
           </div>
           <ul className="space-y-2.5">
@@ -44,7 +44,7 @@ export default function Footer() {
               <li key={link}>
                 <a
                   href="#"
-                  className="text-white/70 text-sm underline hover:text-white transition-colors"
+                  className="text-white text-sm underline hover:text-white transition-colors"
                 >
                   {link}
                 </a>
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="text-white/50 text-xs uppercase tracking-widest font-semibold mb-4">
+          <div className="text-white text-xs uppercase tracking-widest font-semibold mb-4">
             Follow Us
           </div>
           <div className="flex items-center gap-3 mb-6">
@@ -70,10 +70,10 @@ export default function Footer() {
             ))}
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-white/70 text-xs border border-white/30 rounded-full px-4 py-1.5">
+            <span className="text-white text-xs border border-white/30 rounded-full px-4 py-1.5">
               e Login
             </span>
-            <span className="text-white/50 text-xs">Powered by edlio</span>
+            <span className="text-white text-xs">Powered by edlio</span>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeftIcon, ArrowRightIcon } from "./EdlioIcons";
 import { eventDates } from "../data";
 
 export default function SchoolEvents() {
@@ -24,16 +24,16 @@ export default function SchoolEvents() {
               <button
                 key={d.month + d.day}
                 onClick={() => setActive(i)}
-                className={`flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full shrink-0 transition-colors ${
+                className={`flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-[8px] shrink-0 transition-colors ${
                   active === i
                     ? "bg-[#101B33] text-white"
-                    : "bg-white text-[#101B33] hover:bg-white/70"
+                    : "bg-[#A9812E] text-white hover:bg-[#8B6A1F]"
                 }`}
               >
-                <span className="text-[10px] uppercase tracking-wide [color:oklch(0.627_0.1098_82.164)]">
+                <span className="text-[10px] uppercase tracking-wide text-white">
                   {d.month}
                 </span>
-                <span className="text-lg font-extrabold [color:oklch(0.627_0.1098_82.164)]">{d.day}</span>
+                <span className="text-lg font-extrabold text-white">{d.day}</span>
               </button>
             ))}
 
@@ -42,34 +42,34 @@ export default function SchoolEvents() {
             <div className="bg-[oklch(100%_0_90)] rounded-xl p-6 sm:p-8 text-center mb-8 grow basis-[0%] flex flex-col gap-2">
               <h3 className="font-bold [color:oklch(0.226_0.0495_264.23)] my-0 h-max">New Years Day</h3>
               <div className="w-full h-max">
-                <p className="text-sm h-max text-gray-500">Time: 9:00am-5:00pm</p>
-                <p className="text-sm text-gray-500">Location: Home</p>
+                <p className="text-sm h-max text-[#000000]">Time: 9:00am-5:00pm</p>
+                <p className="text-sm text-[#000000]">Location: Home</p>
               </div>
             </div>
             <div className="bg-[oklch(100%_0_90)] rounded-xl p-6 sm:p-8 text-center mb-8 flex-col grid grow basis-[0%] gap-y-2">
               <h3 className="font-bold [color:oklch(0.226_0.0495_264.23)] my-0 h-max">President's Day - No School<br /></h3>
               <div className="h-max">
-                <p className="text-sm h-max text-gray-500">Time: 8:30am-4:30pm</p>
-                <p className="text-sm text-gray-500">Location: Edlio Offices<br /></p>
+                <p className="text-sm h-max text-[#000000]">Time: 8:30am-4:30pm</p>
+                <p className="text-sm text-[#000000]">Location: Edlio Offices<br /></p>
               </div>
             </div>
             <div className="bg-[oklch(22.6%_.0495_264.23)] rounded-xl p-6 sm:p-8 text-center mb-8 flex-col grid grow basis-[0%]">
-              <h3 className="font-bold mb-2 [color:oklch(0.627_0.1098_82.164)]">{event.title}</h3>
-              <p className="text-sm [color:oklch(1_0_90)]">Time: {event.time}</p>
-              <p className="text-sm [color:oklch(1_0_90)]">Location: {event.location}</p>
+              <h3 className="font-bold mb-2 text-white">{event.title}</h3>
+              <p className="text-sm text-white">Time: {event.time}</p>
+              <p className="text-sm text-white">Location: {event.location}</p>
             </div>
             <div className="bg-[oklch(100%_0_90)] rounded-xl p-6 sm:p-8 text-center mb-8 grow basis-[0%] flex flex-col gap-[8px]">
               <h3 className="font-bold [color:oklch(0.226_0.0495_264.23)] my-0 h-max">Independence Day</h3>
               <div className="h-max">
-                <p className="text-sm h-max text-gray-500">Time: 10:30am-3:30pm</p>
-                <p className="text-sm text-gray-500 h-max">Location: Spike's Pool</p>
+                <p className="text-sm h-max text-[#000000]">Time: 10:30am-3:30pm</p>
+                <p className="text-sm text-[#000000] h-max">Location: Spike's Pool</p>
               </div>
             </div>
             <div className="bg-[oklch(100%_0_90)] rounded-xl p-6 sm:p-8 text-center mb-8 grow basis-[0%] flex flex-col gap-[8px]">
               <h3 className="font-bold [color:oklch(0.226_0.0495_264.23)] h-max my-0">Columbus Day</h3>
               <div>
-                <p className="text-sm h-max text-gray-500">Time: 11:00am-5:30pm</p>
-                <p className="text-sm text-gray-500">Location: School Classrooms</p>
+                <p className="text-sm h-max text-[#000000]">Time: 11:00am-5:30pm</p>
+                <p className="text-sm text-[#000000]">Location: School Classrooms</p>
               </div>
             </div>
           </div>
@@ -82,9 +82,9 @@ export default function SchoolEvents() {
             aria-label="Previous date"
             className="w-8 h-8 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ArrowLeftIcon className="w-3 h-3" />
           </button>
-          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
             More Events
           </button>
           <button
@@ -92,7 +92,7 @@ export default function SchoolEvents() {
             aria-label="Next date"
             className="w-8 h-8 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ArrowRightIcon className="w-3 h-3" />
           </button>
         </div>
       </div>

@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { Play, Pause } from "lucide-react";
+import { Pause } from "lucide-react";
+import { PlayIcon } from "./EdlioIcons";
+
+const slides = [
+  { src: "/images/gallery-1.jpg", alt: "Students at Avicena Christian School" },
+  { src: "/images/gallery-2.jpg", alt: "Campus life at Avicena Christian School" },
+  { src: "/images/gallery-3.jpg", alt: "School activities at Avicena Christian School" },
+];
 
 export default function AboutUs() {
   const [playing, setPlaying] = useState(true);
@@ -11,8 +18,8 @@ export default function AboutUs() {
         <div className="relative flex flex-col items-center">
           <div className="relative w-full max-w-sm h-72 sm:h-80 rounded-t-full rounded-b-2xl overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=900&auto=format&fit=crop"
-              alt="School gymnasium"
+              src={slides[active].src}
+              alt={slides[active].alt}
               className="w-full h-full object-cover"
             />
             <button
@@ -23,7 +30,7 @@ export default function AboutUs() {
               {playing ? (
                 <Pause className="w-4 h-4" />
               ) : (
-                <Play className="w-4 h-4" />
+                <PlayIcon className="w-3 h-3" />
               )}
             </button>
           </div>
@@ -45,7 +52,7 @@ export default function AboutUs() {
           <h2 className="text-white text-[32px] font-extrabold uppercase tracking-wide mt-0 mb-[8px]">
             About Us
           </h2>
-          <p className="text-sm leading-relaxed mb-6 [color:oklch(1_0_90)]">
+          <p className="text-sm leading-relaxed mb-6 text-white">
             Welcome to our school! We believe that parent participation is key
             to student success; our new website is designed to provide parents
             with all the information they need to be active participants in
@@ -53,7 +60,7 @@ export default function AboutUs() {
             just as well on mobile devices as it does on a desktop so you can
             find information on the go.
           </p>
-          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
             Learn More
           </button>
         </div>

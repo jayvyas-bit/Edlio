@@ -1,4 +1,5 @@
-import { Search, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import { SearchIcon } from "./EdlioIcons";
 
 const navItems = [
   { label: "Parents", dropdown: true },
@@ -22,7 +23,7 @@ export default function Header() {
             <div className="font-extrabold uppercase tracking-tight text-[#101B33] text-lg">
               Avicena
             </div>
-            <div className="text-[11px] uppercase tracking-widest text-[#6b6355] -mt-1">
+            <div className="text-[11px] uppercase tracking-widest text-[#000000] -mt-1">
               Christian School
             </div>
           </div>
@@ -45,9 +46,9 @@ export default function Header() {
             aria-label="Search"
             className="text-[#1a1a1a] hover:text-[#A9812E] transition-colors"
           >
-            <Search className="w-5 h-5" />
+            <SearchIcon className="w-4 h-4" />
           </button>
-          <button className="bg-[#A9812E] hover:bg-[#8B6A1F] text-white text-sm font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-sm font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
             Donate
           </button>
         </div>

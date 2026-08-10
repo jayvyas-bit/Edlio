@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, BookOpen } from "lucide-react";
+import { ArrowLeftIcon, ArrowRightIcon, OpenBookIcon } from "./EdlioIcons";
 import { newsItems } from "../data";
 
 export default function NewsGrid() {
@@ -20,7 +20,7 @@ export default function NewsGrid() {
               aria-label="Previous news"
               className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ArrowLeftIcon className="w-3 h-3" />
             </button>
 
             <div className="grid sm:grid-cols-3 gap-6 flex-1">
@@ -34,11 +34,11 @@ export default function NewsGrid() {
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <BookOpen className="w-10 h-10 text-white/70" />
+                      <OpenBookIcon className="w-10 h-10 text-white/70" />
                     )}
                   </div>
                   <h3 className="font-bold text-[#101B33] mb-2">{item.title}</h3>
-                  <p className="text-sm text-[#4a453d] leading-relaxed">
+                  <p className="text-sm text-[#000000] leading-relaxed">
                     {item.body}
                   </p>
                 </div>
@@ -50,18 +50,18 @@ export default function NewsGrid() {
               aria-label="Next news"
               className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ArrowRightIcon className="w-3 h-3" />
             </button>
           </div>
 
           <div className="flex justify-center mt-10">
-            <button className="bg-[#A9812E] hover:bg-[#8B6A1F] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
+            <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-lg transition-colors [color:oklch(0.627_0.1098_82.164)]">
               More News
             </button>
           </div>
         </div>
       </section>
-      <div className="bg-[#F5F1EA] text-center py-2 text-[11px] tracking-widest uppercase text-[#6b6355] font-semibold">
+      <div className="bg-[oklch(62.7%_.1098_82.164)] text-center py-8 tracking-widest uppercase font-extrabold text-[32px] text-[#000000]">
         Educating Students for Success in a Changing World
       </div>
     </>

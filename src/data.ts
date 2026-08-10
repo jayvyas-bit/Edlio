@@ -1,9 +1,9 @@
 export const quickLinks = [
-  { num: "01", label: "Enrollment" },
-  { num: "02", label: "Parent Portal" },
-  { num: "03", label: "Lunch Menu" },
-  { num: "04", label: "Staff Directory" },
-  { num: "05", label: "Guidance" },
+  { label: "Enrollment", icon: "document" },
+  { label: "Parent Portal", icon: "family" },
+  { label: "Lunch Menu", icon: "lunch" },
+  { label: "Staff Directory", icon: "directory" },
+  { label: "Guidance", icon: "guidance" },
 ];
 
 export const eventDates = [
@@ -46,14 +46,12 @@ export const eventDates = [
 
 export const newsItems = [
   {
-    image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
+    image: "/images/news-1.jpg",
     title: "Welcome to Our New Website!",
     body: "Thank you for visiting our new website! Please check back often as updates are made, and click on article headlines to view full stories where applicable.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop",
+    image: "/images/news-2.jpg",
     title: "Social Media Updates",
     body: "You can link your social accounts to your Edlio site, and post updates to Twitter and Facebook immediately or schedule posts for later.",
   },
