@@ -6,7 +6,7 @@ export default function AboutUs() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="bg-[#101B33] py-16">
+    <section className="bg-[oklch(62.7%_.1098_82.164)] py-16">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         <div className="relative flex flex-col items-center">
           <div className="relative w-full max-w-sm h-72 sm:h-80 rounded-t-full rounded-b-2xl overflow-hidden">
@@ -35,7 +35,7 @@ export default function AboutUs() {
                 onClick={() => setActive(i)}
                 aria-label={`Slide ${i + 1}`}
                 className={`w-2 h-2 rounded-full transition-colors ${
-                  active === i ? "bg-[#C0392B]" : "bg-white/30"
+                  active === i ? "bg-[#A9812E]" : "bg-white/30"
                 }`}
               />
             ))}
@@ -45,7 +45,7 @@ export default function AboutUs() {
           <h2 className="text-white text-[32px] font-extrabold uppercase tracking-wide mt-0 mb-[8px]">
             About Us
           </h2>
-          <p className="text-white/70 text-sm leading-relaxed mb-6">
+          <p className="text-sm leading-relaxed mb-6 [color:oklch(1_0_90)]">
             Welcome to our school! We believe that parent participation is key
             to student success; our new website is designed to provide parents
             with all the information they need to be active participants in
@@ -53,7 +53,7 @@ export default function AboutUs() {
             just as well on mobile devices as it does on a desktop so you can
             find information on the go.
           </p>
-          <button className="bg-[#C0392B] hover:bg-[#a5301f] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
             Learn More
           </button>
         </div>

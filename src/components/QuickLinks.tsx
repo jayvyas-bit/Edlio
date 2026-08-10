@@ -21,14 +21,14 @@ export default function QuickLinks() {
             >
               <button className="w-full flex items-center justify-between py-4 group text-left">
                 <span className="flex items-center gap-4">
-                  <span className="text-[#C0392B] font-extrabold text-sm">
+                  <span className="text-[#A9812E] font-extrabold text-sm">
                     {item.num}
                   </span>
-                  <span className="font-extrabold uppercase tracking-wide text-[#101B33] text-sm sm:text-base group-hover:text-[#C0392B] transition-colors">
+                  <span className="font-extrabold uppercase tracking-wide text-[#101B33] text-sm sm:text-base group-hover:text-[#A9812E] transition-colors">
                     {item.label}
                   </span>
                 </span>
-                <ArrowRight className="w-4 h-4 text-[#C0392B] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-[#A9812E] group-hover:translate-x-1 transition-transform" />
               </button>
             </li>
           ))}

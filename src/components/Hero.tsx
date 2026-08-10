@@ -34,7 +34,7 @@ export default function Hero() {
             We are a K-12 school specializing in educating the whole student,
             focusing on the academic and life-skills necessary for success.
           </p>
-          <button className="bg-[#C0392B] hover:bg-[#a5301f] text-white text-xs font-bold uppercase tracking-wide px-5 py-2.5 rounded-full transition-colors">
+          <button className="bg-[#A9812E] hover:bg-[#8B6A1F] text-white text-xs font-bold uppercase tracking-wide px-5 py-2.5 rounded-full transition-colors">
             Learn More
           </button>
         </div>

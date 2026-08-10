@@ -20,7 +20,7 @@ export default function PrincipalMessage() {
             happy to receive feedback and suggestions and my door is always
             open. Here&rsquo;s to another great year!
           </p>
-          <button className="bg-[#C0392B] hover:bg-[#a5301f] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors w-max">
+          <button className="bg-[#A9812E] hover:bg-[#8B6A1F] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors w-max">
             Learn More
           </button>
         </div>

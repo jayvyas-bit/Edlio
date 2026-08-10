@@ -1,4 +1,3 @@
-import { BookOpen } from "lucide-react";
 import {
   FacebookIcon,
   LinkedinIcon,
@@ -13,15 +12,17 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-3 gap-10">
         <div>
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center">
-              <BookOpen className="w-5 h-5 text-white" />
-            </div>
+            <img
+              src="/avicena-logo.png"
+              alt="Avicena Christian School"
+              className="w-12 h-12 object-contain"
+            />
             <div className="leading-tight">
               <div className="font-extrabold uppercase tracking-tight text-white text-base">
-                Antares
+                Avicena
               </div>
               <div className="text-[10px] uppercase tracking-widest text-white/50 -mt-1">
-                High School
+                Christian School
               </div>
             </div>
           </div>

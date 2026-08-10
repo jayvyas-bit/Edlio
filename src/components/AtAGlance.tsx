@@ -23,7 +23,7 @@ export default function AtAGlance() {
         <div className="flex items-center gap-4">
           <button
             aria-label="Previous stats"
-            className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#C0392B] hover:bg-black/5 transition-colors shrink-0"
+            className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -52,7 +52,7 @@ export default function AtAGlance() {
 
           <button
             aria-label="Next stats"
-            className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#C0392B] hover:bg-black/5 transition-colors shrink-0"
+            className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
           >
             <ChevronRight className="w-5 h-5" />
           </button>

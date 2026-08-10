@@ -1,4 +1,3 @@
-import UtilityBar from "./components/UtilityBar";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import QuickLinks from "./components/QuickLinks";
@@ -12,7 +11,6 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div className="min-h-full bg-[#F5F1EA]">
-      <UtilityBar />
       <Header />
       <Hero />
       <QuickLinks />

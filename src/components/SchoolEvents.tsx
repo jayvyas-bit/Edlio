@@ -30,10 +30,10 @@ export default function SchoolEvents() {
                     : "bg-white text-[#101B33] hover:bg-white/70"
                 }`}
               >
-                <span className="text-[10px] uppercase tracking-wide">
+                <span className="text-[10px] uppercase tracking-wide [color:oklch(0.627_0.1098_82.164)]">
                   {d.month}
                 </span>
-                <span className="text-lg font-extrabold">{d.day}</span>
+                <span className="text-lg font-extrabold [color:oklch(0.627_0.1098_82.164)]">{d.day}</span>
               </button>
             ))}
 
@@ -53,10 +53,10 @@ export default function SchoolEvents() {
                 <p className="text-sm text-gray-500">Location: Edlio Offices<br /></p>
               </div>
             </div>
-            <div className="bg-[#101B33] rounded-xl p-6 sm:p-8 text-center mb-8 flex-col grid grow basis-[0%]">
-              <h3 className="text-white font-bold mb-2">{event.title}</h3>
-              <p className="text-white/60 text-sm">Time: {event.time}</p>
-              <p className="text-white/60 text-sm">Location: {event.location}</p>
+            <div className="bg-[oklch(22.6%_.0495_264.23)] rounded-xl p-6 sm:p-8 text-center mb-8 flex-col grid grow basis-[0%]">
+              <h3 className="font-bold mb-2 [color:oklch(0.627_0.1098_82.164)]">{event.title}</h3>
+              <p className="text-sm [color:oklch(1_0_90)]">Time: {event.time}</p>
+              <p className="text-sm [color:oklch(1_0_90)]">Location: {event.location}</p>
             </div>
             <div className="bg-[oklch(100%_0_90)] rounded-xl p-6 sm:p-8 text-center mb-8 grow basis-[0%] flex flex-col gap-[8px]">
               <h3 className="font-bold [color:oklch(0.226_0.0495_264.23)] my-0 h-max">Independence Day</h3>
@@ -80,17 +80,17 @@ export default function SchoolEvents() {
           <button
             onClick={() => go(-1)}
             aria-label="Previous date"
-            className="w-8 h-8 rounded-full flex items-center justify-center text-[#C0392B] hover:bg-black/5 transition-colors shrink-0"
+            className="w-8 h-8 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <button className="bg-[#C0392B] hover:bg-[#a5301f] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
+          <button className="bg-[oklch(22.6%_.0495_264.23)] hover:bg-[#8B6A1F] text-white text-xs font-bold uppercase tracking-wide px-6 py-2.5 rounded-full transition-colors">
             More Events
           </button>
           <button
             onClick={() => go(1)}
             aria-label="Next date"
-            className="w-8 h-8 rounded-full flex items-center justify-center text-[#C0392B] hover:bg-black/5 transition-colors shrink-0"
+            className="w-8 h-8 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
