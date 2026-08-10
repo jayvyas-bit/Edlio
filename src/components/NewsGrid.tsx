@@ -18,7 +18,7 @@ export default function NewsGrid() {
                 setPage((p) => (p + newsItems.length - 1) % newsItems.length)
               }
               aria-label="Previous news"
-              className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
+              className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
             >
               <ArrowLeftIcon className="w-3 h-3" />
             </button>
@@ -48,7 +48,7 @@ export default function NewsGrid() {
             <button
               onClick={() => setPage((p) => (p + 1) % newsItems.length)}
               aria-label="Next news"
-              className="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
+              className="hidden sm:flex w-11 h-11 rounded-full items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0"
             >
               <ArrowRightIcon className="w-3 h-3" />
             </button>

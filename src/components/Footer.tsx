@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#101B33] pt-14 pb-8">
       <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-3 gap-10">
-        <div>
+        <div className="flex flex-col gap-2">
           <div className="flex items-center gap-3 mb-5">
             <img
               src="/avicena-logo.png"
@@ -26,12 +26,14 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p className="text-white text-sm leading-relaxed">
+          <p className="text-white text-sm leading-relaxed underline">
             12960 Culver Blvd, Suite 105
             <br />
             Los Angeles, CA 90066
           </p>
-          <p className="text-white text-sm mt-3">Phone: (877) 623-7200</p>
+          <p className="text-white text-sm my-0">
+            Phone: <span className="underline">(877) 623-7200</span>
+          </p>
           <p className="text-white text-sm">Fax: (888) 682-4062</p>
         </div>
 
@@ -63,9 +65,9 @@ export default function Footer() {
                 key={i}
                 href="#"
                 aria-label="social link"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+                className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="w-11 h-11" />
               </a>
             ))}
           </div>

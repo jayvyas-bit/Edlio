@@ -44,7 +44,7 @@ export default function Header() {
         <div className="flex items-center gap-4 shrink-0">
           <button
             aria-label="Search"
-            className="text-[#1a1a1a] hover:text-[#A9812E] transition-colors"
+            className="w-11 h-11 flex items-center justify-center text-[#1a1a1a] hover:text-[#A9812E] transition-colors"
           >
             <SearchIcon className="w-4 h-4" />
           </button>

@@ -2,7 +2,7 @@ export default function PrincipalMessage() {
   return (
     <section className="bg-[#F5F1EA] pb-16">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-y-8">
-        <div className="bg-white shadow-md p-6 sm:p-8 rounded-tl-[16px] rounded-bl-2xl flex flex-col">
+        <div className="bg-white shadow-md p-6 sm:p-8 rounded-tl-[16px] rounded-bl-2xl flex flex-col h-full justify-center">
           <h2 className="text-[32px] font-extrabold uppercase tracking-wide text-[#101B33] mb-[8px] h-max">
             Principal&rsquo;s Message
           </h2>
@@ -27,7 +27,7 @@ export default function PrincipalMessage() {
         <img
           src="/images/principal.jpg"
           alt="Principal in hallway"
-          className="w-full h-[460px] object-cover rounded-tr-2xl rounded-br-2xl"
+          className="w-full h-full object-cover rounded-tr-2xl rounded-br-2xl"
         />
 
       </div>

@@ -80,7 +80,7 @@ export default function SchoolEvents() {
           <button
             onClick={() => go(-1)}
             aria-label="Previous date"
-            className="w-8 h-8 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
+            className="w-11 h-11 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
             <ArrowLeftIcon className="w-3 h-3" />
           </button>
@@ -90,7 +90,7 @@ export default function SchoolEvents() {
           <button
             onClick={() => go(1)}
             aria-label="Next date"
-            className="w-8 h-8 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
+            className="w-11 h-11 rounded-full flex items-center justify-center text-[#A9812E] hover:bg-black/5 transition-colors shrink-0 [color:oklch(0.226_0.0495_264.23)]"
           >
             <ArrowRightIcon className="w-3 h-3" />
           </button>

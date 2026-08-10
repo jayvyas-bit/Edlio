@@ -25,7 +25,7 @@ export default function AboutUs() {
             <button
               onClick={() => setPlaying((p) => !p)}
               aria-label={playing ? "Pause" : "Play"}
-              className="absolute bottom-4 right-4 w-9 h-9 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
+              className="absolute bottom-4 right-4 w-11 h-11 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
             >
               {playing ? (
                 <Pause className="w-4 h-4" />

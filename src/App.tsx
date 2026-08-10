@@ -10,11 +10,11 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-full bg-[#F5F1EA]">
+    <div className="min-h-full bg-[oklch(22.6%_.0495_264.23)]">
       <Header />
       <Hero />
-      <QuickLinks />
-      <PrincipalMessage>
+      <QuickLinks className="bg-[oklch(22.6%_.0495_264.23)]" />
+      <PrincipalMessage className="bg-[oklch(22.6%_.0495_264.23)]">
       </PrincipalMessage>
       <AboutUs />
       <SchoolEvents />

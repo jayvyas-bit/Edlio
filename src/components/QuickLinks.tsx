@@ -1,10 +1,10 @@
-import { ArrowRight } from "lucide-react";
 import {
   DocumentIcon,
   FamilyIcon,
   LunchIcon,
   DirectoryIcon,
   GuidanceIcon,
+  ArrowRightIcon,
 } from "./EdlioIcons";
 import { quickLinks } from "../data";
 
@@ -18,7 +18,7 @@ const icons: Record<string, typeof DocumentIcon> = {
 
 export default function QuickLinks() {
   return (
-    <section className="bg-[#F5F1EA]">
+    <section className="bg-[oklch(22.6%_.0495_264.23)]">
       <div className="max-w-6xl px-0 grid md:grid-cols-2 gap-10 items-center py-0 mx-[40px] w-full mb-[64px] mt-0">
         <div className="flex justify-center md:justify-start w-[384px] h-full rounded-bl-[16px] rounded-br-[16px]">
           <img
@@ -28,7 +28,7 @@ export default function QuickLinks() {
           />
         </div>
 
-        <ul className="p-20 space-y-3">
+        <ul className="p-20 space-y-3 w-full">
           {quickLinks.map((item) => {
             const Icon = icons[item.icon];
             return (
@@ -40,7 +40,7 @@ export default function QuickLinks() {
                       {item.label}
                     </span>
                   </span>
-                  <ArrowRight className="w-4 h-4 text-[#A9812E] shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRightIcon className="w-4 h-4 text-[#A9812E] shrink-0 group-hover:translate-x-1 transition-transform" />
                 </button>
               </li>
             );
