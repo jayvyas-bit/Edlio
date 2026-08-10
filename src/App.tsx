@@ -14,7 +14,7 @@ export default function App() {
       <Header />
       <Hero />
       <QuickLinks className="bg-[oklch(22.6%_.0495_264.23)]" />
-      <PrincipalMessage className="bg-[oklch(22.6%_.0495_264.23)]">
+      <PrincipalMessage>
       </PrincipalMessage>
       <AboutUs />
       <SchoolEvents />
